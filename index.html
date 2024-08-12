@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h3>Utilisation de Json-Server</h3>
+
+        <form action="#" method="post" id="formulaire">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" class="nom" placeholder="Votre nom..." autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea type="text" name="message" id="message" class="message" placeholder="Votre message..."></textarea>
+            </div>
+            <div class="form-group button">
+                <input type="submit" value="Valider" class="valider" id="valider">
+                <input type="reset" value="Annuler" class="annuler" id="annuler">
+            </div>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 </body>

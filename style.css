@@ -1,0 +1,48 @@
+*{
+    font-family: serif;
+    background-color: grey;
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 60%;
+}
+h3{
+    text-align: center;
+}
+form{
+    width: 100%;
+    padding: 3px 5px;
+}
+input, textarea{
+    width: 100%;
+    padding: 3px 10px;
+    margin: 3px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+}
+.button{
+    display: flex;
+}
+.button > input, .button > input:focus{
+    border: none;
+    color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.button > input.valider{
+    background-color: rgb(36, 113, 36);
+    border-radius: 5px 0 0 5px;
+}
+.button > input.annuler{
+    background-color: #f00;
+    border-radius: 0 5px 5px 0;
+}
+.button > input:hover{
+    opacity: 1;
+}
+input:focus, textarea:focus{
+    border: 1px solid #00f;
+}
