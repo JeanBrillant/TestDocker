@@ -18,6 +18,7 @@ const save = async (e) => {
 
     try {
         await Message.insert(object);
+        form.reset()
         console.log('Message inséré avec succès');
     } catch (error) {
         console.log('Erreur dans script')
