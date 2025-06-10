@@ -1,6 +1,6 @@
-const { createMessage } = require('./../controllers/MessageController')
+import { createMessage } from "./../controllers/MessageController.js"
 
-class Message{
+export class Message{
 
     /**
      * 
@@ -28,14 +28,13 @@ class Message{
    static async insert(mes){
     try {
         const data = {
-          name: mes.nom,
+          nom: mes.nom,
           message: mes.message,
         };
         await createMessage(data);
       } catch (error) {
+        console.log('Erreur dans Message')
         throw new Error(`Erreur dans insert: ${error.message}`);
       }
     }
 }
-
-module.exports = Message
